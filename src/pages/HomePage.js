@@ -27,12 +27,7 @@ function HomePage(props){
 
             <Carousel/> 
             
-            <ContactPage/>
-            
-
-
-        
-            
+            <ContactPage/>      
         </div>   
     );
     

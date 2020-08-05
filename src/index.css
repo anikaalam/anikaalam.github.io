@@ -73,3 +73,12 @@ h3 {
 .anika-carousel{
   margin-top: 100px;
 }
+
+.my-class {
+  transform:scale(1, 1);
+  transition: 1s;
+
+  &:hover {
+      transform:scale(1.5, 1.5);
+  }
+}

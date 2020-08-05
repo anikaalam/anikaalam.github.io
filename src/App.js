@@ -13,6 +13,13 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import Typical from 'react-typical';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import profilepic from './assets/profilepic.jpg';
+import Image from 'react-image-resizer';
+import Hero from './components/Hero';
 
 //1.convert the App.js component into class base component to use State 
 class App extends React.Component{
@@ -59,6 +66,7 @@ class App extends React.Component{
       //7. Create a toggle and collapsing section, makes more responsive
       <Router>
         <Container className ="p-5" fuild={true} >
+          
           <Navbar bg="transparent" variant="light" expand="lg">
             <Navbar.Brand>Fahmida Alam Anika</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
@@ -76,12 +84,18 @@ class App extends React.Component{
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          
+         
           <Footer/>
+          
 
         </Container>
          
 
       </Router>
+     
+      
+      
     );
 
   }

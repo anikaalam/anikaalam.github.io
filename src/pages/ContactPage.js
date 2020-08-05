@@ -29,7 +29,7 @@ function ContactPage(props){
                         <SocialIcon url="anika.contactme@gmail.com" />
                     </Row>
 
-        </Container>
+                </Container>
                 
                 
                 
